@@ -1,0 +1,32 @@
+---
+title: "Quarto Document"
+subtitle: "A simple example"
+author: "Ly"
+data: "2024-02-26"
+format: revealjs
+bibliography: references.bib
+---
+
+```{python}
+#| echo: true 
+#| eval: true
+#| fig-cap: "Sine function"
+#| label: fig-sine
+
+import matplotlib.pyplot as plt
+import numpy as np 
+
+# Generate data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Plot
+plt.plot(x, y)
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.title("Figure 01")
+plt.show()
+
+```
+
+  
